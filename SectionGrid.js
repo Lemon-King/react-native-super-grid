@@ -31,6 +31,7 @@ const SectionGrid = memo(
 
       if (!staticDimension) {
         defaultTotalDimension = maxDimension || Dimensions.get('window').width;
+        defaultTotalDimension -= spacing;
       }
 
       return defaultTotalDimension;
